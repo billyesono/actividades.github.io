@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Chumay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .top-bar {
+            background: #000;
+            padding: 5px 0;
+        }
+        
+        .top-bar a {
+            color: white;
+            font-size: 12px;
+            margin-right: 15px;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 60vh;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                            url('termal-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            background-color: rgba(0,0,0,0.5) !important;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .hero-title {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .btn-saber-mas {
+            background-color: #D32F2F;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+        }
+
+        .destination-bar {
+            background: white;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .destination-link {
+            color: #333;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+
+        .destination-link:hover {
+            color: #D32F2F;
+        }
+
+        .gallery-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 40vh;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="turismochumay-logo.png" alt="Turismo Chumay">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TOUR OPERADOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a href="#" class="nav-link">
+                            <img src="chile-flag.png" alt="ES" height="20">
+                        </a>
+                        <a href="#" class="nav-link">
+                            <img src="uk-flag.png" alt="EN" height="20">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="hero-title mb-4">TOUR TERMAL DESTINO COÑARIPE</h1>
+            <button class="btn btn-saber-mas">SABER MÁS</button>
+        </div>
+    </div>
+
+    <!-- Destination Bar -->
+    <div class="destination-bar py-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="#" class="destination-link">Destino Coñaripe</a>
+                    <a href="#" class="destination-link">Paseo a Caballo</a>
+                    <a href="#" class="destination-link">Aeropuerto Viajes especiales</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="gallery-item">
+                    <img src="gallery1.jpg" alt="Tour 1">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-item">
+                    <img src="gallery2.jpg" alt="Tour 2">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-item">
+                    <img src="gallery3.jpg" alt="Tour 3">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-item">
+                    <img src="gallery4.jpg" alt="Tour 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
